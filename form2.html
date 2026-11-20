@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+</head>
+<body>
+  <h1><u>Event Registration</u></h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>User Personal Information</legend>
+
+      <p>
+        <label for="fullname">Enter your full name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Username" required>
+      </p>
+
+      <p>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+      </p>
+
+      <p>
+        <label for="phone">Enter your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
+      </p>
+
+      <p>
+        <label for="occupation">Occupation</label>
+        <select id="occupation" name="occupation">
+          <option value="business">Business</option>
+          <option value="student">Student</option>
+          <option value="employee">Employee</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Topic Of Interest</legend>
+
+      <p>
+        <input type="checkbox" id="html" name="topics" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="topics" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="topics" value="javascript">
+        <label for="js">JAVASCRIPT</label>
+      </p>
+
+      <label for="comments">COMMENTS:</label><br>
+      <textarea id="comments" name="comments" rows="6" cols="60" placeholder="Give Your Valuable Feedback here...."></textarea>
+      <button type="submit">SUBMIT</button>
+    </fieldset>
+  </form>
+</body>
+</html>
